@@ -8,7 +8,7 @@
   
   **A modern, responsive portfolio showcasing my journey as a Full Stack Developer**
   
-  [🌐 Live Demo](#) | [📧 Contact Me](mailto:nour.ibrahim.dev@gmail.com)
+  [🌐 Live Demo](https://nouribrahim-dev.netlify.app/) | [📧 Contact Me](mailto:nour.ibrahim.dev@gmail.com)
 
 </div>
 
