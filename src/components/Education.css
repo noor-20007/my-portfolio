@@ -174,33 +174,28 @@
     margin-bottom: 40px;
   }
   
+  .timeline::before {
+    display: none;
+  }
+  
+  .timeline-dot {
+    display: none;
+  }
+  
   .timeline-item {
     width: 100%;
     margin-left: 0;
-    padding-left: 40px;
+    padding-left: 0;
     padding-right: 0;
-    text-align: left;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   
   .timeline-item.left,
   .timeline-item.right {
     width: 100%;
     margin-left: 0;
-    padding-left: 40px;
+    padding-left: 0;
     padding-right: 0;
-    text-align: left;
-  }
-  
-  .timeline-item.left .timeline-dot,
-  .timeline-item.right .timeline-dot {
-    left: -8px;
-    right: auto;
-  }
-  
-  .timeline::before {
-    left: 0;
-    transform: none;
   }
   
   .timeline-degree {
