@@ -33,7 +33,7 @@ nav {
   border: solid 1px rgba(255, 255, 255, 0.1);
   width: fit-content;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 90px;
   padding: 12px 2.3rem;
   border-radius: 1.2rem;
   position: fixed;
@@ -121,8 +121,8 @@ nav ul li a {
   display: inline-block;
 }
 
-.homee .home-p {
-  font-size: 1.2rem;
+.homee p {
+  font-size: 1rem;
   margin: 20px 0 40px 0;
   color: #ccc;
 }
@@ -204,7 +204,7 @@ nav ul li a {
   }
 
   nav {
-    margin-top: 20px;
+    margin-top: 70px;
     padding: 8px 1.5rem;
     width: fit-content;
     max-width: 400px;
@@ -312,7 +312,7 @@ nav ul li a {
   }
 
   nav {
-    margin-top: 10px;
+    margin-top: 80px;
     padding: 8px 20px;
     width: fit-content;
     max-width: 350px;
@@ -329,19 +329,19 @@ nav ul li a {
   }
 
   .homee h1 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     line-height: 1.2;
   }
 
   .intro-text {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     margin-bottom: 8px;
   }
 
-  .homee .home-p {
-    font-size: 0.9rem;
-    padding: 0 20px;
-    line-height: 1.4;
+  .homee p{
+    font-size: 0.7rem;
+    /* padding: 0 20px; */
+    /* line-height: 1.4; */
   }
 
   .connect-btn {
@@ -437,11 +437,11 @@ nav ul li a {
   }
 
   .intro-text {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
-  .homee .home-p {
-    font-size: 0.85rem;
+  .homee p {
+    font-size: 0.6rem;
     padding: 0 15px;
   }
 

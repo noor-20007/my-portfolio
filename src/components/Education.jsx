@@ -30,7 +30,7 @@ const educationData = [
       
       <div className="timeline">
         {educationData.map((item, index) => (
-          <div key={index} className="timeline-item">
+          <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
             <div className="timeline-dot"></div>
             <div className="timeline-content">
               <div className="timeline-year">{item.year}</div>
