@@ -1,0 +1,155 @@
+.skills-section {
+  background-color: black;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* عنوان Skills بنفس تصميم About Me */
+.skills-title {
+  font-size: 3rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.skills-title::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #9743e693 15%, #72289477 40%, transparent 40%, transparent 60%, #a22dada6 60%, #8d259b7e 85%, transparent 100%);
+}
+
+.skills-title::after {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #952da36e;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.skills-subtitle {
+  color: #a0a9c0;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  font-weight: 300;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  white-space: nowrap;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.skill-icon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.skill-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+/* رسبونسف */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 80px 15px;
+  }
+  
+  .skills-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .skills-subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 40px;
+  }
+  
+  .skills-grid {
+    gap: 10px;
+  }
+  
+  .skill-card {
+    padding: 6px 12px;
+  }
+  
+  .skill-icon {
+    font-size: 1rem;
+  }
+  
+  .skill-name {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-title {
+    font-size: 1.8rem;
+  }
+  
+  .skills-title::before {
+    width: 80px;
+  }
+  
+  .skills-grid {
+    gap: 8px;
+  }
+  
+  .skill-card {
+    padding: 5px 10px;
+  }
+  
+  .skill-icon {
+    font-size: 0.9rem;
+  }
+  
+  .skill-name {
+    font-size: 0.7rem;
+  }
+}

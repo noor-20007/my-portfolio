@@ -1,0 +1,30 @@
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #000;
+  color:white;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-signature {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  margin: 0 auto 20px;
+}
+
+.footer-copyright {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
