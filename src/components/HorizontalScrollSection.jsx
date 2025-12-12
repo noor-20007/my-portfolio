@@ -7,7 +7,7 @@ import "../HorizontalScrollSection.css";
 import forestFocus from "../assets/forest focus.png";
 import security from "../assets/security.png";
 import shower from "../assets/shawer.png";
-
+import corehouse from "../assets/academy.png";
 // import icons
 import { SiPhp } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
@@ -19,7 +19,7 @@ import { FaCss3Alt } from "react-icons/fa6";
 import { FaLaravel } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
-
+import { RiTailwindCssFill } from "react-icons/ri";
 
 // يجب تسجيل المكون الإضافي ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -66,11 +66,33 @@ const HorizontalScrollSection = () => {
         "Easy online booking and service requests",
       ],
       image: security,
-      url: "https://noor-20007.github.io/security/",
-      github: "https://github.com/noor-20007/security.git",
-     
+      url: "https://academy.erplok.com/",
+      github: "https://github.com/noor-20007/academy.git",
+
       icons: [
         <FaJs style={{ color: "yellow" }} />,
+        <FaLaravel style={{ color: "red" }} />,
+        <FaPhp style={{ color: "blue" }} />,
+
+        <RiTailwindCssFill style={{ color: "blue" }} />,
+      ],
+    },
+    {
+      title: "CoreHouse Academy",
+      description:
+        "CoreHouse Academy is an advanced educational platform built with Laravel that aims to provide an exceptional learning experience for students and teachers. The platform supports course management, lessons, and educational content in an easy and effective way.",
+      features: [
+        "Advanced course management system",
+        "Interactive lessons and quizzes",
+        "User-friendly interface for students and teachers",
+        "Easy tracking of learning progress",
+      ],
+      image: corehouse, // لو عندك صورة خاصة بالمشروع ممكن تغيري الرابط هنا
+      url: "https://github.com/noor-20007/academy", // لو عايزة تحطي رابط مباشر للموقع لو معمول
+      github: "https://github.com/noor-20007/academy.git",
+      icons: [
+        <FaLaravel style={{ color: "red" }} />,
+        <FaPhp style={{ color: "blue" }} />,
         <FaBootstrap style={{ color: "purple" }} />,
         <FaHtml5 style={{ color: "orange" }} />,
         <FaCss3Alt style={{ color: "blue" }} />,
@@ -89,8 +111,13 @@ const HorizontalScrollSection = () => {
       image: forestFocus,
       url: "https://github.com/noor-20007/forest-focus.git",
       github: "https://github.com/noor-20007/forest-focus.git",
-      icons: [<FaLaravel style={{ color: "red" }} />, <SiPhp style={{ color: "#847796ff" }} /> , <FaJs style={{ color: "yellow" }} />, <FaCss3Alt style={{ color: "blue" }}/>],
-    }
+      icons: [
+        <FaLaravel style={{ color: "red" }} />,
+        <SiPhp style={{ color: "#847796ff" }} />,
+        <FaJs style={{ color: "yellow" }} />,
+        <FaCss3Alt style={{ color: "blue" }} />,
+      ],
+    },
   ];
 
   useEffect(() => {
@@ -98,8 +125,8 @@ const HorizontalScrollSection = () => {
       setIsMobile(window.innerWidth <= 1024);
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
@@ -162,7 +189,10 @@ const HorizontalScrollSection = () => {
             <div className="mobile-cards-container">
               {projects.map((project, index) => (
                 <div key={index} className="mobile-project-card">
-                  <div className="mobile-image-wrapper" onClick={() => window.open(project.url, '_blank')}>
+                  <div
+                    className="mobile-image-wrapper"
+                    onClick={() => window.open(project.url, "_blank")}
+                  >
                     <div className="project-link-overlay">
                       <FiExternalLink className="link-icon" />
                     </div>
@@ -187,11 +217,11 @@ const HorizontalScrollSection = () => {
                     <div className="project-badge">
                       <span className="badge-line"></span>
                       <span className="project-title">{project.title}</span>
-                      <FaGithub 
-                        className="github-icon" 
+                      <FaGithub
+                        className="github-icon"
                         onClick={(e) => {
                           e.stopPropagation();
-                          window.open(project.github, '_blank');
+                          window.open(project.github, "_blank");
                         }}
                       />
                     </div>
@@ -219,9 +249,11 @@ const HorizontalScrollSection = () => {
                     <span className="project-title">
                       {projects[currentProject].title}
                     </span>
-                    <FaGithub 
-                      className="github-icon" 
-                      onClick={() => window.open(projects[currentProject].github, '_blank')}
+                    <FaGithub
+                      className="github-icon"
+                      onClick={() =>
+                        window.open(projects[currentProject].github, "_blank")
+                      }
                     />
                   </div>
                   <p className="project-type">Team project</p>
@@ -253,7 +285,10 @@ const HorizontalScrollSection = () => {
                   <div ref={imagesContainerRef} className="images-container">
                     {projects.map((project, index) => (
                       <div key={index} className="project-image">
-                        <div className="project-image-container" onClick={() => window.open(project.url, '_blank')}>
+                        <div
+                          className="project-image-container"
+                          onClick={() => window.open(project.url, "_blank")}
+                        >
                           <div className="project-link-overlay">
                             <FiExternalLink className="link-icon" />
                           </div>
