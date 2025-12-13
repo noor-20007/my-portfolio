@@ -1,44 +1,60 @@
 /* Scroll Animations */
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(50px);
-  transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .animate-on-scroll.animate-in {
   opacity: 1;
-  transform: translateY(0);
 }
 
-.animate-on-scroll.fade-left {
-  transform: translateX(-50px);
+/* Slide from Left */
+.animate-on-scroll.slide-left {
+  transform: translateX(-100px);
 }
 
-.animate-on-scroll.fade-left.animate-in {
+.animate-on-scroll.slide-left.animate-in {
   transform: translateX(0);
 }
 
-.animate-on-scroll.fade-right {
-  transform: translateX(50px);
+/* Slide from Right */
+.animate-on-scroll.slide-right {
+  transform: translateX(100px);
 }
 
-.animate-on-scroll.fade-right.animate-in {
+.animate-on-scroll.slide-right.animate-in {
   transform: translateX(0);
 }
 
+/* Scale Up */
 .animate-on-scroll.scale-up {
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 .animate-on-scroll.scale-up.animate-in {
   transform: scale(1);
 }
 
-.animate-delay-1 { transition-delay: 0.2s; }
-.animate-delay-2 { transition-delay: 0.4s; }
-.animate-delay-3 { transition-delay: 0.6s; }
-.animate-delay-4 { transition-delay: 0.8s; }
+/* Fade Up */
+.animate-on-scroll.fade-up {
+  transform: translateY(50px);
+}
 
+.animate-on-scroll.fade-up.animate-in {
+  transform: translateY(0);
+}
+
+/* Bounce In */
+.animate-on-scroll.bounce-in {
+  transform: scale(0.3);
+  transition: all 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.animate-on-scroll.bounce-in.animate-in {
+  transform: scale(1);
+}
+
+/* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
@@ -46,3 +62,10 @@ html {
 * {
   scroll-behavior: smooth;
 }
+
+/* Stagger Animation Delays */
+.animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+.animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+.animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+.animate-on-scroll:nth-child(4) { transition-delay: 0.4s; }
+.animate-on-scroll:nth-child(5) { transition-delay: 0.5s; }

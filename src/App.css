@@ -9,6 +9,14 @@
     "wdth"100;
 }
 
+body {
+  background-color: black !important;
+}
+
+html {
+  background-color: black !important;
+}
+
 
 .homePage {
   position: relative;
@@ -23,7 +31,7 @@
 /*-------------- Navbar styles---------- */
 /* ------------------------------------- */
 /* ------------------------------------- */
-nav {
+.homePage nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +44,16 @@ nav {
   margin-top: 90px;
   padding: 12px 2.3rem;
   border-radius: 1.2rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  display: none;
 }
 
 nav ul {

@@ -10,15 +10,10 @@ import shower from "../assets/shawer.png";
 import corehouse from "../assets/academy.png";
 // import icons
 import { SiPhp } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
+import { FaPython, FaBootstrap, FaJs, FaHtml5, FaLaravel, FaGithub, FaPhp } from "react-icons/fa";
 import { SiOpencv } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
-import { FaLaravel } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import { FaGithub } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 // يجب تسجيل المكون الإضافي ScrollTrigger
@@ -66,8 +61,8 @@ const HorizontalScrollSection = () => {
         "Easy online booking and service requests",
       ],
       image: security,
-      url: "https://academy.erplok.com/",
-      github: "https://github.com/noor-20007/academy.git",
+      url: "https://noor-20007.github.io/security/",
+      github: "https://github.com/noor-20007/security.git",
 
       icons: [
         <FaJs style={{ color: "yellow" }} />,
@@ -88,7 +83,7 @@ const HorizontalScrollSection = () => {
         "Easy tracking of learning progress",
       ],
       image: corehouse, // لو عندك صورة خاصة بالمشروع ممكن تغيري الرابط هنا
-      url: "https://github.com/noor-20007/academy", // لو عايزة تحطي رابط مباشر للموقع لو معمول
+      url: "https://academy.erplok.com/", // لو عايزة تحطي رابط مباشر للموقع لو معمول
       github: "https://github.com/noor-20007/academy.git",
       icons: [
         <FaLaravel style={{ color: "red" }} />,
